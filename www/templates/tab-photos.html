@@ -1,0 +1,12 @@
+<ion-view view-title="Photos">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="photos in photos.photos" class="item item-thumbnail-left">
+          <img src="{{photos.image_url}}">
+          <h2>{{photos.name}}</h2>
+          <p><i class="ion-ios-heart"></i> {{photos.favorites_count}}</p>
+          <p ng-bind-html="photos.description"></p>        
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

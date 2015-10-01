@@ -1,0 +1,12 @@
+<ion-view view-title="Friends">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="friend in friends.friends" class="item item-thumbnail-left">
+          <img src="{{friend.userpic_url}}">
+          <h2>{{friend.fullname}}</h2>
+          <p><i class="ion-thumbsup"></i> Followers: {{friend.followers_count}}</p>
+          <p ng-if="friend.city">From: {{friend.city}}</p>        
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
